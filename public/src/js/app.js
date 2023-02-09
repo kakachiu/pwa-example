@@ -3,7 +3,7 @@ if ("serviceWorker" in navigator) {
   // 註冊 Service Workers
   // register 是支援 Promise
   navigator.serviceWorker
-    .register("/sw.js")
+    .register("./sw.js")
     .then(res => {
       console.log("Service worker registered!");
     })
