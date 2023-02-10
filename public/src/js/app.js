@@ -16,7 +16,7 @@ let deferredPrompt;
 
 window.addEventListener("beforeinstallprompt", function (event) {
   console.log("beforeinstallprompt fired");
-  event.preventDefault(); // 取消預設的直接跳出通知設定
+  // event.preventDefault(); // 取消預設的直接跳出通知設定
   deferredPrompt = event; // 將監聽到的install banner事件傳到deferredPrompt變數
 
   return false;
